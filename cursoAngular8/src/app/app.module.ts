@@ -1,3 +1,4 @@
+import { LazyloadingModule } from './modules/lazyloading/lazyloading.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,17 +9,20 @@ import { NgIfNgForComponent } from './ng-if-ng-for/ng-if-ng-for.component';
 import { CrudComponent } from './componentes/crud/crud.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
     NgIfNgForComponent,
     CrudComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LazyloadingModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]

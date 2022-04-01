@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  {path:"lazy",loadChildren: () => import('./modules/lazyloading/lazyloading.module').then(module => module.LazyloadingModule)},
+
   { path:"primeirocomponente",component:DataBindingComponent},
   { path:"ngifngfor",component:NgIfNgForComponent},
 ];
