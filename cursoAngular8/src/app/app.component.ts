@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cursoAngular8';
+  numero: number = 1;
+  arrNumeros= [1, 2, 3];
 }
