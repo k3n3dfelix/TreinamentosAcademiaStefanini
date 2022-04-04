@@ -6,8 +6,13 @@ btn.addEventListener("click", function(){
     var ajax = new XMLHttpRequest();
     //console.log(ajax);
 
+    
     ajax.open("GET", "lista.php");
 
+    //Exemplo via post
+    //ajax.open("POST", "lista.php");
+    //ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    
     //ajax.responseType = "json";
 
     ajax.send(null);
