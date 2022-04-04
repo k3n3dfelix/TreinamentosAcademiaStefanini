@@ -12,7 +12,7 @@ btn.addEventListener("click", function(){
           //alert( "Data Saved: " + msg );
           var resultado = JSON.parse(data);
 
-          for (var i = 0; i < resultado; i++){
+          for (var i = 0; i < resultado.length; i++){
               $(".list").append("<li>"+ resultado[i]+"</li>");
           }
         });
